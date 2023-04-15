@@ -142,7 +142,7 @@ footer {
         padding-left: 1px;
         margin-left: 1px;
         column-gap: 55px;
-        row-gap: 5px;
+        row-gap: 55px;
         border-top: 2px solid gray;
     }
     .contentdiv img {
