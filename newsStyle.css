@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(rgb(0, 0, 0), rgba(17, 17, 17, 0.877));
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.maincon {
+    display: flex;
+    gap: 20px;
+}
+
+.contentdiv {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(3, 25%);
+    gap: 35px;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 70px;
+    padding: 30px;
+    column-gap: 60px;
+    row-gap: 60px;
+}
+
+.nav {
+    height: 100px;
+}
+
+h1 img {
+    height: 2rem;
+    width: 2rem;
+}
+
+nav,
+h1,
+p {
+    color: black;
+    height: 2.5rem;
+    background-color: rgb(255, 251, 251);
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    padding-top: 15px;
+    font-size: 2rem;
+}
+
+nav p {
+    font-size: small;
+}
+
+h3 {
+    color: yellow;
+}
+
+.sidebar,
+ul,
+li {
+    color: white;
+    list-style: none;
+    padding-top: 1.5rem;
+    font-size: medium;
+    padding: 5px;
+    margin-top: 10px;
+    width: 150px;
+}
+
+.sidebar li:hover {
+    transform: scale(1.1);
+    color: yellow;
+    text-decoration: underline;
+}
+
+.sidebar {
+    margin-top: 60px;
+    width: 20vw;
+    height: 43vw;
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+    font-size: small;
+}
+
+.contentdiv img {
+    height: 10rem;
+    width: 15rem;
+    border-radius: 20px;
+}
+
+.contentdiv a:hover {
+    color: yellow;
+}
+
+hr {
+    margin: 50px;
+    color: yellow;
+}
+
+.aboutus {
+    margin: 40px;
+    color: azure;
+}
+
+footer {
+    text-align: center;
+    color: gray;
+}
+
+@media (max-width:375px) {
+    .sidebar,
+    ul,
+    li {
+        display: flex;
+        font-size: smaller;
+        padding: 0px;
+        width: 45px;
+    }
+    .sidebar,
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 200%);
+        grid-template-rows: repeat(2, 40%);
+    }
+    .sidebar {
+        display: inline-block;
+    }
+    .sidebar h3 {
+        font-size: small;
+    }
+    .nav {
+        height: 50px;
+    }
+    .maincon {
+        display: block;
+    }
+    .contentdiv {
+        display: grid;
+        padding-left: 1px;
+        margin-left: 1px;
+        column-gap: 55px;
+        row-gap: 5px;
+        border-top: 2px solid gray;
+    }
+    .contentdiv img {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 20px;
+    }
+}
